@@ -150,6 +150,10 @@ body {
 
 .about .row .about-img iframe {
   width: 100%;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
 }
 
 .about .row .content {
@@ -294,7 +298,6 @@ footer .credit a {
   html {
     font-size: 75%;
   }
-
 }
 
 /* Tablet */
