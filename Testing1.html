@@ -1,0 +1,150 @@
+<!DOCTYPE HTML>
+<html lang="id">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+        
+        <link rel="stylesheet" href="css/styletest.css" />
+        <link rel="icon" type="image/x-icon" href="/images/favicon2.ico" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,600;1,100;1,300;1,400;1,600&display=swap" rel="stylesheet">
+       
+        <script src="https://unpkg.com/feather-icons"></script>
+        <title> Porto </title>
+    </head>
+    <body>
+        <nav class="navbar">
+            <div class="logo">
+                <h3>mlanaysf</h3>
+            </div>
+            <div class="navbar-nav">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#contact">contact me</a>
+                <a href="#project">My Projects</a>
+            </div>
+
+            <div class="navbar-extra">
+                <a href="#" id="search"><i data-feather="search"></i></a>
+                <a href="#" id="hamburger-menu"> <i data-feather="menu"></i></a>
+            </div>
+        </nav>
+
+        <section class="hero" id="home">
+            <div class="container">
+                <div class="intro">
+                    <h1> Maulana Yusuf</h1>
+                    <p> A passionate developer creating innovative solutions. 
+                        Let’s collaborate and bring your ideas to life.
+                          </p>
+                    <div class="button">
+                        <a href="Assets/Maulana Yusuf_CV_2025.pdf" download class="btn">Download CV</a>
+                        <a href="https://wa.me/6281234567890" download class="btn_contact">Contact me</a>    
+                    </div>
+                </div>
+                <div class="photo">
+                    <img src="img/Maul.png" alt="My Photos"/>
+                </div>
+    
+            </div>
+        </section>
+
+        <section class="about" id="about">
+            <h2>About me</h2>
+            <div class="aboutc">
+                <div class="profile">
+                    <img src="img/maul3.jpg" alt="myphoto">
+                </div>
+                <div class="content">
+                    <p>Hi, Welcome to my Portfolio Website! I'm an Informatics Engineering student who’s passionate about tech,
+                         especially web development, back end, and also machine learning. I enjoy turning ideas into real projects, learning new skills, 
+                        and collaborating with others to create meaningful digital solutions. </p>
+                    <div class="socials">
+                        <a href="https://www.instagram.com/mlanayusuuf/"><i data-feather="instagram"></i></a>
+                        <a href="https://linkedin.com/in/maulana-yusuf-59987624a/"><i data-feather="linkedin"></i></a>
+                        <a href="https://www.tiktok.com/@laxyd28"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-tiktok" viewBox="0 0 16 16">
+                            <path d="M9 0h1.98c.144.715.54 1.617 1.235 2.512C12.895 3.389 13.797 4 15 4v2c-1.753 0-3.07-.814-4-1.829V11a5 5 0 1 1-5-5v2a3 3 0 1 0 3 3z"/>
+                          </svg></a>
+                        <a href="mailto:maulana.yusuf28054@gmail.com"><i data-feather="mail"></i></a>
+                        <a href="https://github.com/Lana2805"><i data-feather="github"></i></a>
+                    </div>
+                </div>    
+            </div>
+        </section> 
+        <section class="projects" id="project">
+            <h2> My Projects</h2>
+            <div class="project-container">
+                <div class="project-card" onclick="openModal('project1')">
+                    <img src="img/random.png" alt="Project 1">
+                    <p> Random Landing Page Project - Web Development & Design</p>    
+                </div>
+                <div class="project-card" onclick="openModal('project2')">
+                    <img src="img/maggot.png" alt="Project 2">
+                    <p> MaggoSense Project - Embedded System</p>    
+                </div>
+
+                <div class="modal" id="project1">
+                    <div class="modal-content">
+                        <span class="close" onclick="closeModal('project1')">&times;</span>
+                        <h3>Random Project - Web Design Portfolio</h3>
+                        <img src="img/maggot.png" alt="Demo Project">
+                        <p> Sebuah project landing page / profile page untuk teman dekat saya. Dibuat pada
+                            2023 dengan menggunakan bahasa pemrograman HTML, CSS, serta Javascript
+                        </p>
+                        <a href="https://rrandom.vercel.app">Klik di sini</a>
+                        <h4>HTML, CSS, Javascript</h4>
+                    </div>
+                </div>
+                <div class="modal" id="project2">
+                    <div class="modal-content">
+                        <span class="close" onclick="closeModal('project2')">&times;</span>
+                        <img src="img/maggot.png" alt="Demo Project">
+                        <h3>MaggotSense Project - Embedded System</h3>
+                        <p> Sebuah project kandang pintar untuk budidaya maggot, Kandang ini
+                            terintegrasi dengan Mikrokontroller ESP32 serta dilengkapi sensor suhu kelembaban
+                            DHT22, Sensor gas MQ-6, serta sebuah minifan 3". Sistem ini bekerja
+                            dengan membaca variabel-variabel seperti kadar suhu, kelembaban, serta gas
+                            yang terkandung didalam kandang. Ketika kadar-kadar tersebut, baik satu maupun
+                            seluruhnya melewati ambang batas yang telah di tetapkan, sistem akan 
+                            menyalakan minifan untuk menciptakan sirkulasi udara didalam kandang
+                            untuk menurunkan kadar yang melebihi ambang batas tersebut. Sistem ini juga
+                            tersambung pada pengguna melalui Bot Telegram yang akan mengirimkan
+                            Informasi pada pengguna, dan memungkinkan pengguna memantau, maupun
+                            mengambil tindakan seperti menyalakan / mematikan fan jika dirasa perlu. 
+                        </p>
+                        <h4>Mikrokontroller ESP32, Arduino IDE, Sensor DHT22, Sensor MQ-6</h4>
+                    </div>
+                </div>
+  
+            </div>
+        </section>
+  <!--Footer Section Start-->
+        <footer>
+            <div class="socials">
+            <a href="https://www.instagram.com/r_random10/"><i data-feather="instagram"></i></a>
+            <a href="#"><i data-feather="twitter"></i></a>
+            <a href="#"><i data-feather="facebook"></i></a>
+            <a href="https://www.youtube.com/@randomfamily10"><i data-feather="youtube"></i></a>
+            <a href="mailto:keluargarandom@gmail.com"><i data-feather="mail"></i></a>
+            </div>
+        <div class="links">
+            <a href="#home">Home</a>
+            <a href="#about">Tentang Kami</a>
+            <a href="#member">Member</a>
+            <a href="#contact">Kontak</a>
+        </div>
+        <div class="credit">
+            <p>Created by <a href="https://www.instagram.com/lana2805_/">Lana2805</a> | &copy;2025</p>
+        </div>
+        </footer>
+        <!--Footer Section End-->
+
+        <!--Feather Icons-->
+    
+        <script>
+            feather.replace();
+        </script>
+        <script src="js/java.js"></script>
+    </body>
+</html>
